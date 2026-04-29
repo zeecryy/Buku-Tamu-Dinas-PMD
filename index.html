@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -11,12 +11,13 @@
     <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <div class="card">
         <div class="header">
-          <h2>Buku Tamu Dinas PMD Bidang Penataan dan Pekembangan Desa</h2>
-          <p>Mohon isi data kunjungan Anda dengan lengkap</p>
+          <h2>Buku Tamu Dinas PMD</h2>
+          <p>Bidang Penataan dan Perkembangan Desa</p>
         </div>
 
         <form id="guestForm">
@@ -26,7 +27,7 @@
               <input
                 type="text"
                 id="namaInput"
-                placeholder="Masukkan nama lengkap..."
+                placeholder="Masukan nama Lengkap..."
                 required
               />
             </div>
@@ -36,7 +37,7 @@
               <input
                 type="text"
                 id="alamatInput"
-                placeholder="Masukkan alamat Anda..."
+                placeholder="Masukkan alamat lengkap..."
                 required
               />
             </div>
@@ -46,14 +47,14 @@
               <input
                 type="text"
                 id="jabatanInput"
-                placeholder="Jabatan..."
+                placeholder="Kepala Desa / Staf..."
                 required
               />
             </div>
 
             <div class="group">
               <label>No. HP / WhatsApp</label>
-              <input type="tel" id="hpInput" placeholder="08...." required />
+              <input type="tel" id="hpInput" placeholder="0812xxxx" required />
             </div>
 
             <div class="group full-width">
@@ -61,13 +62,13 @@
               <textarea
                 id="tujuanInput"
                 rows="3"
-                placeholder="Tuliskan alasan kunjungan..."
+                placeholder="Tuliskan alasan kunjungan Anda..."
                 required
               ></textarea>
             </div>
 
             <div class="group full-width">
-              <label>Tanda Tangan (Boleh dikosongkan)</label>
+              <label>Tanda Tangan</label>
               <div class="sig-container">
                 <canvas id="signature-pad"></canvas>
                 <button type="button" class="clear-btn" id="clearBtn">
@@ -83,6 +84,11 @@
         </form>
         <div id="status"></div>
       </div>
+
+      <footer class="footer-copyright">
+        <div class="footer-divider"></div>
+        <p>&copy; 2026 <span class="name">IKING LALUSU</span></p>
+      </footer>
     </div>
 
     <script src="script.js"></script>
